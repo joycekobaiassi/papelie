@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Papeliê | Papelaria Personalizada</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PREVIEW WHATSAPP -->
+  <meta property="og:title" content="Papeliê | Papelaria Personalizada">
+  <meta property="og:description" content="Etiquetas escolares, lembrancinhas e datas especiais feitas com carinho. Peça seu orçamento pelo WhatsApp 💖">
+  <meta property="og:image" content="https://SEUSITE.com/imagens/preview.jpg">
+  <meta property="og:url" content="https://SEUSITE.com">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+  <!-- TOPO -->
+  <header class="topo">
+    <img src="imagens/logo-papelie.png" alt="Papeliê - Papelaria Personalizada">
+  </header>
+
+  <!-- CONTEÚDO -->
+  <main class="container">
+
+    <p class="descricao">
+      Faça seu pedido de forma rápida e personalizada 💖
+    </p>
+
+<details class="produto">
+  <summary>Etiquetas Escolares</summary>
+  <div class="galeria">
+    <img src="imagens/etiquetas1.jpg" alt="Etiqueta escolar 1">
+    <img src="imagens/etiquetas2.jpg" alt="Etiqueta escolar 2">
+  </div>
+
+  <a class="btn-orcamento"
+     href="https://wa.me/5567999156656
+?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20etiquetas%20escolares."
+     target="_blank">
+     Fazer orçamento agora
+  </a>
+</details>
+
+<details class="produto">
+  <summary>Lembrancinhas</summary>
+  <div class="galeria">
+    <img src="imagens/lembrancinhas1.jpg" alt="Lembrancinha 1">
+    <img src="imagens/lembrancinhas2.jpg" alt="Lembrancinha 2">
+  </div>
+
+  <a class="btn-orcamento"
+     href="https://wa.me/5567999156656
+?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20lembrancinhas."
+     target="_blank">
+     Fazer orçamento agora
+  </a>
+</details>
+
+<details class="produto">
+  <summary>Datas Especiais</summary>
+  <div class="galeria">
+    <img src="imagens/datas1.jpg" alt="Data especial 1">
+    <img src="imagens/datas2.jpg" alt="Data especial 2">
+  </div>
+
+  <a class="btn-orcamento"
+     href="https://wa.me/5567999156656
+?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20datas%20especiais."
+     target="_blank">
+     Fazer orçamento agora
+  </a>
+</details>
+<a class="btn-instagram"
+   href="https://www.instagram.com/corumba.papelie?igsh=cTZ2cTVzZ3ZkeDc4"
+   target="_blank">
+  📸 Veja nossos trabalhos no Instagram
+</a>
+
+
+    <a class="btn-whatsapp" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido." target="_blank">
+      💬 Atendimento direto no WhatsApp
+
+    </a>
+
+  </main>
+<script>
+  const detalhes = document.querySelectorAll("details.produto");
+
+  detalhes.forEach((detail) => {
+    detail.addEventListener("toggle", () => {
+      if (detail.open) {
+        detalhes.forEach((outro) => {
+          if (outro !== detail) {
+            outro.removeAttribute("open");
+          }
+        });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
