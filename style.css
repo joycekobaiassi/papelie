@@ -142,4 +142,14 @@ footer a {
 footer a:hover {
   color: #e91e63;
 }
+footer a {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer a:hover {
+  color: #e91e63;
+}
+
 
